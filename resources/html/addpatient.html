@@ -1,0 +1,96 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>Add Patient-Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="addpatient.css">
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+       .span1{
+           color:gray;
+       }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <div id="mysideNav" class="sideNav">
+        <p class="logo">HIS<span class="menu">☰</span></p>
+        <p class="logo1"><span class="menu1">☰</span></p>
+        <a href="../doctor dashboard.php" class="icon-a"><i class="fas fa-chart-line"></i>&nbsp;
+            &nbsp;<span class="span">Dashboard</span></a>
+            <a href="../appoinment/doctor dashboard.php" class="icon-a"><i class="far fa-calendar-check"></i>&nbsp;
+             &nbsp;<span class="span">Appointment History</span></a>
+            <a href="../addpatient/addpatient.php" class="icon-a"><i class="fas fa-user-injured"></i>&nbsp;
+            &nbsp;<span class="span">Patients</span></a>
+            <a href="../search/doctor dashboard.php" class="icon-a"><i class="fa fa-search icons"></i>&nbsp;
+            &nbsp;<span class="span"> Search</span></a>
+        
+
+    </div>
+    <div id="main">
+
+        <div class="head">
+            <div class="col-div-6">
+    <p class="nav"> Hospital HIS</p>
+    
+    </div>
+        
+        <div class="col-div-6">
+            
+            
+        <div class="profile">
+    
+            <img src="patientt.png" class="pro-img">
+            <p>Add Patient <i class="fa fa-ellipsis-v dots" aria-hidden="true"></i></p>
+            <div class="profile-div">
+                <p><i class="fa fa-user"></i> &nbsp;&nbsp;Profile</p>
+                <p><i class="fa fa-cogs"></i> &nbsp;&nbsp;Settings</p>
+                <p><i class="fa fa-power-off"></i> &nbsp;&nbsp;Log Out</p>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+   </div>
+
+    <div class="clearfix"></div>
+    <br>
+    <div class="sec">
+        <p> <span class="hs">PATIENT</span> | ADD PATIENT</p>
+    </div>
+    <div class="content1">
+        <form action="connect2.php" method="post">
+          <label for="fname">Patient First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Patient Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="gender"><b>Gender</b></label><br><br>
+         <label class="miro-radiobutton">
+        <input type="radio" value="m" name="gender" checked="">
+       <span class="span1">Male</span>
+      </label>
+    <label class="miro-radiobutton">
+      <input type="radio" value="f" name="gender">
+      <span class="span1">Female</span>
+     </label><br><br>
+          <label for="email">Patient E-mail</label>
+          <input type="text" id="email" name="email" placeholder="Your E-mail..">
+
+          <label for="address">Patient Address</label>
+          <input type="text" id="address" name="address" placeholder="Your Address..">
+          <label for="email">Patient Age</label>
+          <input type="text" id="age" name="age" placeholder="Your Age..">
+          <label for="email">Medical History </label><br>
+          <input type="text" id="history" name="history" placeholder=" your History..">
+
+          <input type="submit" value="ADD">
+        </form>
+      </div>
+      
+      
+    
+    
+
+</div>
+</div> 
+
+</body></html>
